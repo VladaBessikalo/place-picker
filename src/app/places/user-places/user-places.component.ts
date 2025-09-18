@@ -10,5 +10,4 @@ import { PlacesComponent } from '../places.component';
   styleUrl: './user-places.component.css',
   imports: [PlacesContainerComponent, PlacesComponent],
 })
-export class UserPlacesComponent {
-}
+export class UserPlacesComponent {}
