@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 app.get("/places", async (req, res) => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  return res.status(500).json(); // emulate a server error
+  // return res.status(500).json(); // emulate a server error
 
   const fileContent = await fs.readFile("./data/places.json");
 
