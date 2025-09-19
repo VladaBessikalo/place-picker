@@ -17,7 +17,7 @@ export class UserPlacesComponent implements OnInit {
   error = signal('');
   private destroyRef = inject(DestroyRef);
   private placesService = inject(PlacesService);
-  places = this.placesService.loadUserPlaces;
+  places = this.placesService.loadedUserPlaces;
 
   ngOnInit() {
     this.isFetching.set(true);
